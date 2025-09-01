@@ -12,3 +12,5 @@ It combines intelligent web scraping with natural language processing to transfo
 ⚡ Fast, scalable, and easy to integrate into pipelines
 
 🔧 Configurable selectors & custom extraction rules
+
+https://www.youtube.com/watch?v=KAvuVUh0XU8&list=PLHeeIIvSJGw5CGhnGzPHkF_JoQ1r42LWP&index=8
