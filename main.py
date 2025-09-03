@@ -9,5 +9,5 @@ crawler.warmup()
 # Run the crawler on a URL
 result = crawler.run(url="https://openai.com/api/pricing/")
 
-# Print the extracted content
+# Print the extracted contents
 print(result.markdown)
