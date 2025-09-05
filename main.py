@@ -9,7 +9,7 @@ async def main():
 
     async with AsyncWebCrawler(config=browser_conf) as crawler:
         result = await crawler.arun(
-            url="https://example.com",
+            url="https://openai.com/api/pricing/",
             config=run_conf
         )
         print(result.markdown)
