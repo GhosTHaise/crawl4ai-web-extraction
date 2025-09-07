@@ -7,6 +7,7 @@ requires-python = ">=3.10"
 dependencies = [
     "crawl4ai>=0.7.4",
     "nltk>=3.9.1",
+    "praisonai>=2.2.88",
     "torch>=2.8.0",
     "transformers>=4.56.0",
 ]
