@@ -6,8 +6,10 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "crawl4ai>=0.7.4",
+    "langchain-openai>=0.3.32",
     "nltk>=3.9.1",
-    "praisonai>=2.2.88",
+    "praisonai[crewai]>=2.2.88",
+    "tokenizers<=0.20.3",
     "torch>=2.8.0",
-    "transformers>=4.56.0",
+    "transformers<4.56.0",
 ]
