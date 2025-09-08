@@ -1,0 +1,40 @@
+framework: crewai
+topic: extract model pricing from websites
+roles:
+  web_scraper:
+    backstory: An expert in web scraping with a deep understanding of extracting structured
+      data from online sources. https://openai.com/api/pricing/ https://www.anthropic.com/pricing https://cohere.com/pricing
+    goal: Gather model pricing data from various websites
+    role: Web Scraper
+    tasks:
+      scrape_model_pricing:
+        description: Scrape model pricing information from the provided list of websites.
+        expected_output: Raw HTML or JSON containing model pricing data.
+    tools:
+    - 'ModelFeeTool'
+  data_cleaner:
+    backstory: Specialist in data cleaning, ensuring that all collected data is accurate
+      and properly formatted.
+    goal: Clean and organize the scraped pricing data
+    role: Data Cleaner
+    tasks:
+      clean_pricing_data:
+        description: Process the raw scraped data to remove any duplicates and inconsistencies,
+          and convert it into a structured format.
+        expected_output: Cleaned and organized JSON or CSV file with model pricing
+          data.
+    tools:
+    - ''
+  data_analyzer:
+    backstory: Data analysis expert focused on deriving actionable insights from structured
+      data.
+    goal: Analyze the cleaned pricing data to extract insights
+    role: Data Analyzer
+    tasks:
+      analyze_pricing_data:
+        description: Analyze the cleaned data to extract trends, patterns, and insights
+          on model pricing.
+        expected_output: Detailed report summarizing model pricing trends and insights.
+    tools:
+    - ''
+dependencies: []
