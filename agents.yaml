@@ -11,7 +11,7 @@ roles:
         description: Scrape model pricing information from the provided list of websites.
         expected_output: Raw HTML or JSON containing model pricing data.
     llm:
-      model: groq/meta-llama/llama-4-scout-17b-16e-instruct
+      model: "groq/meta-llama/llama-4-scout-17b-16e-instruct"
     tools:
     - 'ModelFeeTool'
   data_cleaner:
